@@ -12,8 +12,12 @@ h1 {
     font-weight: 400;
     font-style: normal;
 }
-h2 {
+.fuente2 {
     color: aliceblue;
+    font-family: "Playwrite AU NSW", cursive;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
 }
 main {
     min-height: 100vh;
