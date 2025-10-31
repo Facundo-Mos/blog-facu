@@ -18,6 +18,7 @@ h1 {
     font-optical-sizing: auto;
     font-weight: <weight>;
     font-style: normal;
+    text-align: center;
 }
 main {
     min-height: 100vh;
@@ -43,4 +44,13 @@ section img:hover {
     width: 300px;
     opacity: 1;
     filter: contrast(120%);
+}
+div {
+    text-align: center;
+    margin: 5%;
+}
+a {
+    background-color: rgba(71, 71, 71, 0);
+    color: aliceblue;
+    text-align: center;
 }
