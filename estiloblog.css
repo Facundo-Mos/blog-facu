@@ -19,26 +19,30 @@ h1 {
     font-family: "BBH Sans Hegarty", sans-serif;
     font-style: normal;
 }
+
 .fuente2 {
     color: aliceblue;
     font-family: "Playwrite AU NSW", cursive;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: weight;
     font-style: normal;
     text-align: center;
 }
+
 main {
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 section {
     display: flex;
     width: 600px;
     height: 430px;
     position:  relative;
 }
+
 section img {
     width: 0px;
     flex-grow: 1;
@@ -46,21 +50,25 @@ section img {
     opacity: .8;
     transition: .5s ease;
 }
+
 section img:hover {
     cursor: crosshair;
     width: 300px;
     opacity: 1;
     filter: contrast(120%);
 }
+
 div {
     text-align: center;
     margin: 5%;
 }
+
 a {
     background-color: rgba(71, 71, 71, 0);
     color: aliceblue;
     text-align: center;
 }
+
 .redes {
     font-size: 24px;
 }
