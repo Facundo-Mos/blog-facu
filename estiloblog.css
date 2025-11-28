@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(104, 103, 103);
+    background-color: rgb(153, 148, 148);
     margin: 0;
     position: relative;
 }
@@ -20,6 +20,10 @@ h1 {
     font-style: normal;
 }
 
+h2{
+    margin: auto ;
+}
+
 .fuente2 {
     color: aliceblue;
     font-family: "Playwrite AU NSW", cursive;
@@ -30,17 +34,17 @@ h1 {
 }
 
 main {
-    min-height: 100vh;
+    min-height: 50vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
 }
 
 section {
     display: flex;
     width: 600px;
     height: 430px;
-    position:  relative;
+    position: relative;
 }
 
 section img {
@@ -71,4 +75,67 @@ a {
 
 .redes {
     font-size: 24px;
+}
+
+.formulario {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.formulario:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.tabla1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.tabla {
+    width: 60%;
+    padding: 15%;
+    border-collapse: collapse;
+    background-color: antiquewhite;
+}
+
+.tabla th{
+    border: 3px solid rgb(104, 103, 103);
+}
+.tabla td {
+    border: 3px solid rgb(104, 103, 103);
+}
+
+ul {
+    list-style-type: none;
 }
