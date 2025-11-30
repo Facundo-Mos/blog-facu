@@ -1,12 +1,12 @@
 body {
-    background-color: rgb(153, 148, 148);
+    background-image: url("img/Gemini_Generated_Image_3d68qk3d68qk3d68.png");
     margin: 0;
     position: relative;
 }
 
 header {
-    background-color: rgb(17, 10, 41);
-    color: white;
+    background-color: rgb(59, 58, 64);
+    color: rgb(31, 30, 30);
     padding: 2rem 2rem;
 }
 
@@ -20,21 +20,98 @@ h1 {
     font-style: normal;
 }
 
+.titulos, .fuente2 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
 h2{
-    margin: auto ;
+    border: 2px solid rgba(250, 235, 215, 0.76);
+    background-color: rgba(250, 235, 215, 0.76);
+    border-radius: 8px;
 }
 
 .fuente2 {
-    color: aliceblue;
+    color: rgb(237, 242, 242);
     font-family: "Playwrite AU NSW", cursive;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
+    text-shadow: 3px 5px 5px rgb(0, 0, 0);
+}
+
+.nav{
+    width: 300px;
+}
+
+.nav__link{
+    color: rgb(250, 235, 215);
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+}
+
+.nav__link--inside{
+    border-radius: 6px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.nav__link--inside:hover{
+    background: #ffffff2b;
+}
+
+.list{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0 16px 16px 0;
+    background: #ffffff04;
+}
+
+.list__item{
+    list-style-type: none;
+    width: 100%;
     text-align: center;
+    overflow: hidden;
+}
+
+.list__item--click{
+    cursor: pointer;
+}
+
+.list__button{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.arrow .list__arrow{
+    transform: rotate(90deg);
+}
+
+.list__arrow{
+    margin-left: auto;
+    transition: transform .3s;
+}
+
+.list__show{
+    width: 80%;
+    margin-left: auto;
+    border-left: 2px solid #ffffff5c;
+    transition: height .4s;
+    height: 0;
 }
 
 main {
-    min-height: 50vh;
+    min-height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;    
@@ -62,11 +139,6 @@ section img:hover {
     filter: contrast(120%);
 }
 
-div {
-    text-align: center;
-    margin: 5%;
-}
-
 a {
     background-color: rgba(71, 71, 71, 0);
     color: aliceblue;
@@ -88,7 +160,7 @@ a {
 }
 
 .formulario:hover {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 10px rgb(255, 255, 255);
 }
 
 input[type="text"], input[type="email"], input[type="password"] {
@@ -129,13 +201,20 @@ input[type="submit"]:hover {
     background-color: antiquewhite;
 }
 
+.tabla:hover {
+    box-shadow: 0 4px 10px rgb(243, 243, 243);
+}
+
 .tabla th{
-    border: 3px solid rgb(104, 103, 103);
+    border: 3px solid rgb(153, 148, 148);
 }
 .tabla td {
-    border: 3px solid rgb(104, 103, 103);
+    border: 3px solid rgb(153, 148, 148);
 }
 
 ul {
     list-style-type: none;
+}
+footer {
+    text-align: center;
 }
