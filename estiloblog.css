@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-color: rgb(59, 58, 64);
+    background: #ffffff04;
     color: rgb(31, 30, 30);
     padding: 2rem 2rem;
 }
@@ -17,7 +17,6 @@ h1 {
     margin-bottom: 30px;
     font-size: 4rem;
     font-family: "BBH Sans Hegarty", sans-serif;
-    font-style: normal;
 }
 
 .titulos, .fuente2 {
@@ -28,7 +27,7 @@ h1 {
     padding: 20px;
 }
 
-h2{
+h2 {
     border: 2px solid rgba(250, 235, 215, 0.76);
     background-color: rgba(250, 235, 215, 0.76);
     border-radius: 8px;
@@ -38,54 +37,55 @@ h2{
     color: rgb(237, 242, 242);
     font-family: "Playwrite AU NSW", cursive;
     font-optical-sizing: auto;
-    font-weight: weight;
     font-style: normal;
     text-shadow: 3px 5px 5px rgb(0, 0, 0);
 }
 
-.nav{
+.nav {
     width: 300px;
+    display: flex;
 }
 
-.nav__link{
+.nav__link {
     color: rgb(250, 235, 215);
     display: block;
     padding: 15px 0;
     text-decoration: none;
 }
 
-.nav__link--inside{
+.nav__link--inside {
     border-radius: 6px;
     padding-left: 20px;
     text-align: left;
 }
 
-.nav__link--inside:hover{
+.nav__link--inside:hover {
     background: #ffffff2b;
 }
 
-.list{
+.list {
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    border-radius: 0 16px 16px 0;
+    justify-content: center;
     background: #ffffff04;
+    border-radius: 0 16px 16px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.list__item{
+.list__item {
     list-style-type: none;
     width: 100%;
     text-align: center;
     overflow: hidden;
 }
 
-.list__item--click{
+.list__item--click {
     cursor: pointer;
 }
 
-.list__button{
+.list__button {
     display: flex;
     align-items: center;
     gap: 1em;
@@ -93,34 +93,34 @@ h2{
     margin: 0 auto;
 }
 
-.arrow .list__arrow{
+.arrow .list__arrow {
     transform: rotate(90deg);
 }
 
-.list__arrow{
+.list__arrow {
     margin-left: auto;
     transition: transform .3s;
 }
 
-.list__show{
+.list__show {
     width: 80%;
     margin-left: auto;
     border-left: 2px solid #ffffff5c;
-    transition: height .4s;
     height: 0;
+    transition: height .4s;
 }
 
 main {
-    min-height: 20vh;
+    min-height: 50vh;
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
 }
 
 section {
     display: flex;
-    width: 600px;
-    height: 430px;
+    width: 800px;
+    height: 630px;
     position: relative;
 }
 
@@ -134,13 +134,13 @@ section img {
 
 section img:hover {
     cursor: crosshair;
-    width: 300px;
+    width: 400px;
     opacity: 1;
     filter: contrast(120%);
 }
 
 a {
-    background-color: rgba(71, 71, 71, 0);
+    background-color: transparent;
     color: aliceblue;
     text-align: center;
 }
@@ -155,7 +155,7 @@ a {
     border-radius: 10px;
     padding: 20px;
     width: 300px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     transition: box-shadow 0.3s ease;
 }
 
@@ -163,7 +163,9 @@ a {
     box-shadow: 0 4px 10px rgb(255, 255, 255);
 }
 
-input[type="text"], input[type="email"], input[type="password"] {
+input[type="text"],
+input[type="email"],
+input[type="password"] {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -205,16 +207,21 @@ input[type="submit"]:hover {
     box-shadow: 0 4px 10px rgb(243, 243, 243);
 }
 
-.tabla th{
-    border: 3px solid rgb(153, 148, 148);
-}
+.tabla th,
 .tabla td {
     border: 3px solid rgb(153, 148, 148);
+}
+
+.tabla td {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 ul {
     list-style-type: none;
 }
+
 footer {
     text-align: center;
+    padding: 4rem;
 }
